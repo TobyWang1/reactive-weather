@@ -1,6 +1,6 @@
 import WeatherCard from "./WeatherCard";
 
-function Location({ data, location, setLocation }) {
+function Location({ data, location}) {
     console.log("Data:", data);
     console.log("Current location:", location);
     // Find city based on location prop
@@ -12,7 +12,7 @@ function Location({ data, location, setLocation }) {
             <h3 className="subtitle">Up to the minute weather news</h3>
             <div className="app">
                 {city ? (
-                    <WeatherCard city={city} />
+                    <WeatherCard city={city}/>
                 ) : (
                     <p>No city found for the given location.</p>
                 )}
